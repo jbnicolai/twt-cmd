@@ -1,0 +1,23 @@
+{
+    "name": "twitter command line",
+    "version": "0.0.1",
+
+    "description": "A simple command-line tool for twitter",
+    "author": "Oscar López",
+    "engines": {
+        "node": ">=0.10"
+    },
+    "dependencies": {
+        "commander": "*"
+        ,"shelljs":"*"
+	,"chalk":"*"
+	,"twitter":"*"
+    },
+    "bin": {
+        "twt": "twittercmd.js"
+    },
+    "repository": {
+	"type" : "git",
+	"url" : "https://github.com/lopezoscar/twt-cmd.git"
+    }
+}
