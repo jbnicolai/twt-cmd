@@ -39,12 +39,11 @@ function trackKey(key){
 	            var message = data;
 	            //var message = data || {user:{}};
 	            if(message){
-	                console.log("Tweet: ",message.text);
 	                if(message.user){
-
-	                    console.log("@"+message.user.name);
-	                    console.log(message.user["screen_name"]);
+	                    console.log(color.inverse(message.user.name) + " " + color.bgBlue("@"+message.user["screen_name"]) );
 	                }
+	                console.log("Tweet: ",color.yellow(message.text));
+	                console.log("");
 	            }else{
 	                console.log('message empty');
 	            }
